@@ -16,7 +16,7 @@ function Header(props) {
             <Typography variant="h5" color="inherit">Software Developer</Typography>
           </Grid>
           <Grid item  sm={6} md={6} lg={6} xs={6} className="avatar">
-            <Avatar alt="Sergio Luna" src="/pic.jpg" className="avatar_image"/>
+            <Avatar alt="Sergio Luna" src="pic.jpg" className="avatar_image"/>
           </Grid>
         </Grid>
       </AppBar>
