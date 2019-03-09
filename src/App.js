@@ -1,28 +1,43 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
+import Header from './components/Header.js';
+import Goal from './components/Goal.js';
+import Body from './components/Body.js';
+import { Grid } from "@material-ui/core";
+import Footer from './components/Footer.js';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: "#daf0f8",
+      main: "#29c3df",
+      dark: "#000000",
+      contrastText: "#fff"
+    }
+  },
+  typography: {
+    useNextVariants: true,
+  }
+});
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <MuiThemeProvider theme={theme}>
+          <Grid container>
+            <Grid item sm={false} md={false} lg={2} xs={false} xl={3}></Grid>
+            <Grid item sm={12} md={12} lg={8} xs={12} xl={6}>
+              <Header/>
+              <Goal/>
+              <Body/>
+              <Footer/>
+            </Grid>
+            <Grid item sm={false} md={false} lg={2} xs={false} xl={3}></Grid>
+          </Grid>
+        </MuiThemeProvider>
       </div>
-    );
+    )
   }
 }
-
-export default App;
+export default App

@@ -12,3 +12,122 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.title{
+  color: #29c3df !important;
+  margin-bottom: 10 !important;
+  font-weight: bold !important;
+}
+
+.title_section{
+  font-weight: bold !important;
+}
+
+.desc_section{
+  padding: 0 !important;
+}
+
+.date{
+  float: right;
+  color: #29c3df;
+  font-weight: bold;
+}
+
+.list_item{
+  margin-bottom: 20px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.list_main{
+  padding-top:0;
+}
+
+.container{
+  width: 100%;
+}
+
+.label{
+  font-weight: bold;
+  width: 70px;
+  display: inline-block;
+}
+
+.text{
+  font-weight: normal;
+}
+
+.divider{
+  margin: 10px 0px !important;
+}
+
+.content{
+  padding: 30px;
+}
+
+.content_goal{
+  padding: 30px;
+  background-color:  #daf0f8 !important;
+  text-align: justify;
+}
+
+.content_footer{
+  padding: 30px 30px 30px 30px;
+}
+
+.content_footer h6{
+  color: #FFF !important;
+  font-weight: bold;
+}
+
+.row{
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+  padding: 30px;
+  background-color:  #FFF;
+}
+
+.avatar_image{
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.avatar{
+  display: contents;
+  text-align: -webkit-right;
+}
+
+.wrapper{
+  margin: 5px;
+  position: relative;
+}
+
+.skill{
+  position: inherit;
+  top: -61px;
+}
+
+.skill_grid{
+  text-align: center;
+  height: 110px
+}
+
+.footer{
+  text-align: center !important;
+}
+
+.logo-react{
+  width: 80px !important;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .content_goal,.content{
+    padding: 10px;
+  }
+  .row{
+    padding: 10px;
+  }
+  .text{
+    font-size: 15px;
+  }
+}
