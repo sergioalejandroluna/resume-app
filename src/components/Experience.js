@@ -7,16 +7,20 @@ import ListItemText from '@material-ui/core/ListItemText';
 import WorkIcon from '@material-ui/icons/Work';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 
-function Experience(props) {
-  return (
-        <div>
-              <Typography variant="h6" className="title">Experience</Typography>
-              <Grid container
-                direction="row"
-                justify="space-between"
-                alignItems="center">
-                <Grid className="container">
-                  <List className="list_main">
+class Experience extends React.Component {
+
+  render(){
+    return (
+          <div>
+            <Typography variant="h6" className="title">Experience</Typography>
+            <Grid container
+              direction="row"
+              justify="space-between"
+              alignItems="center">
+              <Grid className="container">
+              {this.props.experience.map(({title, place, date, activities}) => {
+                return (
+                  <List className="list_main" key={title}>
                     <ListItem alignItems="flex-start" className="list_item">
                       <ListItemIcon>
                         <WorkIcon />
@@ -24,40 +28,25 @@ function Experience(props) {
                       <ListItemText
                         className="desc_section"
                         classes={{ primary: "title_section" }}
-                        primary="Universidad Autónoma de Chihuahua"
+                        primary={place}
                         secondary={
                           <React.Fragment>
                             <Typography component="span">
-                              Software Developer <span className="date">Nov.2017</span>
+                              {title} <span className="date">{date}</span>
                             </Typography>
-                            {"Contribute to develop a webapp using Ruby On Rails, React & PostgresSQL, unit test with Enzyme & Jest."}
-                          </React.Fragment>
-                        }
-                      />
-                    </ListItem>
-                    <ListItem alignItems="flex-start" className="list_item">
-                      <ListItemIcon>
-                        <WorkIcon />
-                      </ListItemIcon>
-                      <ListItemText
-                        className="desc_section"
-                        classes={{ primary: "title_section" }}
-                        primary="Afinpatrimonial SC"
-                        secondary={
-                          <React.Fragment>
-                            <Typography component="span">
-                              Systems Coordinator <span className="date">2011-2017</span>
-                            </Typography>
-                            {" Web development using mainly: HTML, PHP, CSS, Jquery, Angular, NuSOAP, ASPX.NET"}
+                            {activities}
                           </React.Fragment>
                         }
                       />
                     </ListItem>
                   </List>
-                </Grid>
+                  )
+              })}
               </Grid>
-      </div>
-  );
+            </Grid>
+        </div>
+    );
+  }
 }
 
 export default Experience;

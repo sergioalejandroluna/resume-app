@@ -3,16 +3,15 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
-class Software extends React.Component {
+class Interests extends React.Component {
   state = {
     items:  []
   }
 
 constructor(props){
   super(props);
-
   this.state =  {
-    items: this.props.softwares.map(item => ({ ...item, percent: 0}))
+    items: this.props.interests.map(item => ({ ...item, percent: 0}))
   };
 };
 
@@ -26,7 +25,7 @@ componentWillUnmount() {
 
 progress(completion){
   this.setState({
-    items: this.props.softwares.map((item, i) => {
+    items: this.props.interests.map((item, i) => {
       const { completed: current } = this.state.items[i];
       const { completed: max } = item;
       return {
@@ -40,8 +39,9 @@ progress(completion){
   render(){
     return (
           <div>
-            <Typography variant="h6" className="title">Software</Typography>
-                {this.props.softwares.map(({name, percent}) => {
+          <br/>
+            <Typography variant="h6" className="title">Interests</Typography>
+                {this.props.interests.map(({name, percent}) => {
                   return (
                     <Grid container
                       direction="row"
@@ -61,4 +61,4 @@ progress(completion){
   }
 }
 
-export default Software;
+export default Interests;

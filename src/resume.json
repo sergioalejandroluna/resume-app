@@ -1,0 +1,120 @@
+{
+  "personal": [{
+    "tag": "Nombre",
+		"value": "Sergio Alejandro Luna Flores"
+  },
+    {
+    "tag": "Mobile",
+		"value": "(614)175-04-27"
+  },
+    {
+    "tag": "Age",
+    "value": "32"
+  },
+  {
+    "tag": "English",
+    "value": "Intermediate"
+  },
+  {
+    "tag": "E-mail",
+    "value": "sergio.alejandro.luna.flores@gmail.com"
+  }
+	],
+  "info": {
+    "short_name": "Sergio Luna",
+		"label": "Software Developer",
+		"picture": "sergio-luna.jpg",
+		"goal": "Apply information technologies to make more efficient processes and tasks, in order to meet the information needs of the everyday world."
+	},
+	"softwares": [{
+			"name": "React",
+			"percent": 50
+		},
+		{
+			"name": "Ruby On Rails",
+			"percent": 60
+		},
+		{
+			"name": "PHP",
+			"percent": 80
+		},
+		{
+			"name": "Javascript",
+			"percent": 50
+		},
+		{
+			"name": "HTML",
+			"percent": 100
+		},
+		{
+			"name": "GIT",
+			"percent": 50
+		},
+		{
+			"name": "PostgreSQL",
+			"percent": 65
+		},
+		{
+			"name": "MacOS",
+			"percent": 65
+		},
+		{
+			"name": "Debian Linux",
+			"percent": 60
+		}
+	],
+	"skills": [{
+			"name": "Self thought",
+			"percent": 100
+		},
+		{
+			"name": "Analytic",
+			"percent": 90
+		},
+		{
+			"name": "Sociable",
+			"percent": 90
+		}
+	],
+  "interests": [{
+      "name": "Web development",
+      "percent": 100
+    },
+    {
+      "name": "Digital Marketing",
+      "percent": 100
+    },
+    {
+      "name": "New technologies",
+      "percent": 100
+    },
+    {
+      "name": "Entrepreneurship",
+      "percent": 90
+    },
+    {
+      "name": "Consulting",
+      "percent": 90
+    }
+  ],
+	"education": [{
+		"name": "Universidad Autónoma de Chihuahua",
+		"degree": "Information Systems Master Degree",
+		"date": "2014-2017"
+	}, {
+		"name": "Universidad Autónoma de Chihuahua",
+		"degree": "Computers Systems Engineer",
+		"date": "2004-2009"
+	}],
+  "experience": [{
+    "title": "Software Developer",
+    "place": "Universidad Autónoma de Chihuahua",
+    "date": "Nov.2017",
+    "activities": "Contribute to develop a webapp using Ruby On Rails, React & PostgresSQL, unit test with Enzyme & Jest."
+  }, {
+    "title": "Systems Coordinator",
+    "place": "Afinpatrimonial SC",
+    "date": "2011-2017",
+    "activities": "Web development using mainly: HTML, PHP, CSS, Jquery, Angular, NuSOAP, ASPX.NET"
+  }]
+}
