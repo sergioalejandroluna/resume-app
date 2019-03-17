@@ -16,7 +16,7 @@ constructor(props){
 };
 
  componentDidMount() {
-   this.timer = setTimeout (() => this.progress(1),2000);
+   this.timer = setTimeout (() => this.progress(5), 50);
  }
 
 componentWillUnmount() {
@@ -24,24 +24,32 @@ componentWillUnmount() {
 }
 
 progress(completion){
+  let done = 0;
   this.setState({
     items: this.props.skills.map((item, i) => {
-      const { completed: current } = this.state.items[i];
-      const { completed: max } = item;
+      const { percent: current } = this.state.items[i];
+      const { percent: max } = item;
+      if (current + completion >= max) {
+          done += 1;
+        }
       return {
         ...item,
-        completed: Math.min(current + completion, max),
+        percent: Math.min(current + completion, max),
       };
     }),
   });
+  if (done < this.props.skills.length) {
+      this.timer = setTimeout(() => this.progress(5), 50);
+    }
 }
 
   render(){
+    const { items } = this.state;
     return (
           <div>
             <Typography variant="h6" className="title">Skills</Typography>
             <Grid container direction="row">
-              {this.props.skills.map(({name, percent}) => {
+              {items.map(({name, percent}) => {
                 return (
                   <Grid item sm={4} md={4} lg={4} xs={4} className="skill_grid" key={name}>
                     <div className="wrapper">

@@ -10,14 +10,13 @@ class Software extends React.Component {
 
 constructor(props){
   super(props);
-
   this.state =  {
     items: this.props.softwares.map(item => ({ ...item, percent: 0}))
   };
 };
 
  componentDidMount() {
-   this.timer = setTimeout (() => this.progress(5),1000);
+   this.timer = setTimeout (() => this.progress(5), 50);
  }
 
 componentWillUnmount() {
@@ -25,23 +24,31 @@ componentWillUnmount() {
 }
 
 progress(completion){
+  let done = 0;
   this.setState({
     items: this.props.softwares.map((item, i) => {
-      const { completed: current } = this.state.items[i];
-      const { completed: max } = item;
+      const { percent: current } = this.state.items[i];
+      const { percent: max } = item;
+      if (current + completion >= max) {
+          done += 1;
+        }
       return {
         ...item,
-        completed: Math.min(current + completion, max),
+        percent: Math.min(current + completion, max),
       };
     }),
   });
+  if (done < this.props.softwares.length) {
+      this.timer = setTimeout(() => this.progress(5), 50);
+    }
 }
 
   render(){
+    const { items } = this.state;
     return (
           <div>
             <Typography variant="h6" className="title">Software</Typography>
-                {this.props.softwares.map(({name, percent}) => {
+                {items.map(({name, percent}) => {
                   return (
                     <Grid container
                       direction="row"
