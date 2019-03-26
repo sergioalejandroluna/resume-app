@@ -21,7 +21,7 @@ class Education extends React.Component {
               <Grid className="container">
               {this.props.education.map(({name, degree, date}) => {
                 return (
-                  <List className="classes.list_main" key={degree}>
+                  <List className="list_main" key={degree}>
                     <ListItem alignItems="flex-start" className="list_item">
                       <ListItemIcon>
                         <School />
