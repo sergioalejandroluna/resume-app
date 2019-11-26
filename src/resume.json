@@ -7,10 +7,6 @@
     "tag": "Mobile",
 		"value": "(614)175-04-27"
   },
-    {
-    "tag": "Age",
-    "value": "32"
-  },
   {
     "tag": "English",
     "value": "Intermediate"
@@ -18,13 +14,17 @@
   {
     "tag": "E-mail",
     "value": "sergio.alejandro.luna.flores@gmail.com"
+  },
+  {
+    "tag": "Location",
+    "value": "Chihuahua, México"
   }
 	],
   "info": {
     "short_name": "Sergio Luna",
 		"label": "Software Developer",
 		"picture": "sergio-luna.jpg",
-		"goal": "Apply information technologies to make more efficient processes and tasks, in order to meet the information needs of the everyday world."
+		"goal": "Apply information technologies to make more efficient processes, to meet the information needs of the everyday world."
 	},
 	"softwares": [{
 			"name": "React",

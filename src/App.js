@@ -7,6 +7,16 @@ import { Grid } from "@material-ui/core";
 import Footer from './components/Footer.js';
 import  resume from './resume.json';
 
+resume.personal.push({tag: 'Age', value: calculateAge()});
+
+function calculateAge(){
+    const birthday = new Date('11/17/1986');
+    const today = new Date();
+    const miliseconds = 1000 * 60 * 60 * 24;// milliseconds in a day
+    const age = ( (today - birthday) / miliseconds);
+  return Math.floor(age/365);
+}
+
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -14,7 +24,13 @@ const theme = createMuiTheme({
       main: "#29c3df",
       dark: "#000000",
       contrastText: "#fff"
-    }
+    },
+    secondary: {
+      light: "#daf0f8",
+      main: "#fff",
+      dark: "#daf0f8",
+      contrastText: "#000"
+    },
   },
   typography: {
     useNextVariants: true,
@@ -26,6 +42,8 @@ class App extends React.Component {
     super(props);
     this.state = { resume };
   }
+
+
 
   render() {
     const resume = this.state.resume

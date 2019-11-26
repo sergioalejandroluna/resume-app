@@ -49,7 +49,7 @@ code {
 
 .label{
   font-weight: bold;
-  width: 70px;
+  width: 80px;
   display: inline-block;
 }
 
@@ -128,6 +128,6 @@ code {
     padding: 10px;
   }
   .text{
-    font-size: 15px;
+    font-size: 14px;
   }
 }
