@@ -49,12 +49,14 @@ code {
 
 .label{
   font-weight: bold;
-  width: 80px;
+  width: 70px;
   display: inline-block;
+  font-size: 15px;
 }
 
 .text{
   font-weight: normal;
+  font-size: 15px;
 }
 
 .divider{
@@ -62,17 +64,17 @@ code {
 }
 
 .content{
-  padding: 30px;
+  padding: 20px;
 }
 
 .content_goal{
-  padding: 30px;
+  padding: 20px;
   background-color:  #daf0f8 !important;
   text-align: justify;
 }
 
 .content_footer{
-  padding: 30px 30px 30px 30px;
+  padding: 20px;
 }
 
 .content_footer h6{
@@ -82,7 +84,7 @@ code {
 
 .row{
   box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
-  padding: 30px;
+  padding: 20px;
   background-color:  #FFF;
 }
 
@@ -127,7 +129,10 @@ code {
   .row{
     padding: 10px;
   }
-  .text{
-    font-size: 14px;
+  .text, .label{
+    font-size: 13px;
+  }
+  .label{
+    width: 60px;
   }
 }
