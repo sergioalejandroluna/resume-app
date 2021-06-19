@@ -19,7 +19,7 @@ class Header extends React.Component {
               <Typography variant="h3" color="inherit">{name}</Typography>
               <Typography variant="h5" color="inherit">{label}</Typography>
               <br/>
-              <Button color="secondary" variant="contained" target="_blank" href="resume.pdf">Download</Button>
+              <Button color="secondary" variant="contained" target="_blank" href="resume.pdf">Download full version</Button>
             </Grid>
             <Grid item  sm={6} md={6} lg={6} xs={6} className="avatar">
               <Avatar alt="Sergio Luna" src={picture} className="avatar_image"/>

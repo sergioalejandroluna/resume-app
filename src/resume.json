@@ -76,6 +76,23 @@
 			"percent": 90
 		}
 	],
+  "others": [{
+      "name": "AWS",
+      "percent": 50
+    },
+    {
+      "name": "EC2, RDS, S3",
+      "percent": 40
+    },
+    {
+      "name": "Heroku",
+      "percent": 60
+    },
+    {
+      "name": "Capistrano",
+      "percent": 50
+    }
+  ],
   "interests": [{
       "name": "Web development",
       "percent": 100
@@ -106,13 +123,20 @@
 		"degree": "Computers Systems Engineer",
 		"date": "2004-2009"
 	}],
-  "experience": [{
-    "title": "Software Developer",
+  "experience": [
+    {
+      "title": "Software Developer +3 yoe",
+      "place": "Freelance & Personal Project",
+      "date": "Aug.2018",
+      "activities": "One freelance project and another personal project using Ruby On Rails"
+    },
+    {
+    "title": "Software Developer +3 yoe",
     "place": "Universidad Autónoma de Chihuahua",
     "date": "Nov.2017",
-    "activities": "Contribute to develop a webapp using Ruby On Rails, React & PostgresSQL, unit test with Enzyme & Jest."
+    "activities": "Contribute to develop a webapp using Ruby On Rails, React & PostgresSQL, unit tests with Enzyme."
   }, {
-    "title": "Systems Coordinator",
+    "title": "Systems Coordinator +6 yoe",
     "place": "Afinpatrimonial SC",
     "date": "2011-2017",
     "activities": "Web development using mainly: HTML, PHP, CSS, Jquery, Angular, NuSOAP, ASPX.NET"
